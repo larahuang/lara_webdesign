@@ -1,15 +1,18 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import { fileURLToPath, URL } from 'node:url';
-import { resolve } from 'path';
-import { visualizer } from "rollup-plugin-visualizer";
+import { fileURLToPath, URL } from 'node:url'
+import { resolve } from 'path'
+import { visualizer } from "rollup-plugin-visualizer"
 import viteCompression from 'vite-plugin-compression'
+import viteImagemin from 'vite-plugin-imagemin'
+
 export default defineConfig({
   base: '/',
   plugins: [
     vue(),
     visualizer(),
     viteCompression(),
+    viteImagemin(),
   ],
   resolve: {
     alias: {
