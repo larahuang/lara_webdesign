@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "sass": "^1.71.0",
+    "sass-loader": "^14.1.0",
     "vue": "^3.4.15"
   },
   "devDependencies": {

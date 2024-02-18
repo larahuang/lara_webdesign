@@ -19,13 +19,13 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
-  css: {
-    preprocessorOptions: {
-      scss: {
-        additionalData: `@import "@/styles/base.scss";`
-      }
-    }
-  },
+  // css: {
+  //   preprocessorOptions: {
+  //     scss: {
+  //       additionalData: `@import "@/assets/scss/all.scss";`
+  //     }
+  //   }
+  // },
   envDir: resolve(__dirname, './env'),
   server: {
     // 跨domain proxy 設定，只適用於開發階段
